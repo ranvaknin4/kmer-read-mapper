@@ -1,0 +1,20 @@
+# biosequence / Ran Moshe Vaknin
+
+## Extensions:
+
+* pseudo-alignment with quality filtering (EXTQUALITY) - filtering the reads or kmers by their quality or by their count of mapping genomes.
+
+* EXTSIM- filtering the genomes by their similarity level to other genomes
+
+## Design
+
+I chose to store any group of object in a dictionary, list or set depend on it's usage. 
+most of the time i prefered dictionaries because of their efficiency and the complexity 
+of finding a specific object O(1). 
+I chose to use the HIGHEST-PROTOCOL tool when i created a pickle file and to compress it 
+with gzip to minimize the files sizes. 
+I chose to use object-oriented programming to store different data for each type of data
+that I have. 
+I used libraries like numpy or re to minimize the time of applying some functions. 
+I chose to stop the program as soon as possible if there is an invalid input and to filter
+the data from every file as soon as possible to minimize the running time of the program.

@@ -1,0 +1,21 @@
+# 02:48 
+# Show usage instructions
+python3  main.py --help
+
+# 03:05
+# Dumpref implementation and un-exist file
+python3 main.py -t dumpref -g dumpref_examp.fa -k 20
+python3 main.py -t dumpref -g not_exist.fa -k 20
+
+# 03:45
+# Extension filter similar with dumpref
+python3 main.py -t dumpref -g dumpref_examp.fa -k 20 --filter-similar
+
+# 04:07
+# Dumpalign implementation and un-exist file
+python3 main.py -t dumpalign -g example_ref.fa -k 31 --reads example_reads.fq -m 2 -p 4
+python3 main.py -t dumpalign -g example_ref.fa -k 31 --reads not_exist.fq
+
+# 04:36
+# Extentions minimum read quality, minimum kmer quality and max genomes
+python3 main.py -t dumpalign -g example_ref.fa -k 31 --reads example_reads.fq --min-read-quality 2 --min-kmer-quality 4 --max-genomes 1
